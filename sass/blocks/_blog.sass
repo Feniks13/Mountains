@@ -1,0 +1,74 @@
+.blog
+  background: url(../img/blog-bg.jpg) left center no-repeat #f6f4f4
+  background-size: cover
+  padding-bottom: 130px  
+  &-wrap
+    display: flex
+  &-info
+    width: 350px
+    margin-top: 203px
+    &__title
+      font-size: 24px
+      line-height: 42px
+      letter-spacing: 2px
+      color: $title-color
+      font-weight: 700
+      &::before
+        content: ''
+        display: block
+        width: 80px
+        height: 8px
+        background: url(../img/waves.png) left top no-repeat
+        margin-bottom: 10px
+    &__text
+      font-size: 14px
+      line-height: 26px
+      margin-bottom: 30px
+    &__btn
+      @include btn()
+      padding: 10px 30px
+  &-img
+    position: relative 
+    left: 215px
+    &__one
+      margin-top: -36px
+      z-index: 0
+    &__two
+      position: absolute
+      bottom: -95px
+      left: -90px
+
+@media (max-width: 1600px)
+  .blog
+    &-img
+      left: 100px
+
+@media (max-width: 1400px)
+  .blog
+    &-img
+      left: 50px
+      &__two
+        left: -25px
+
+@media (max-width: 1280px)
+  .blog
+    padding-bottom: 70px
+    &-wrap
+      display: flex
+      flex-direction: column
+    &-info
+      width: 80%
+      margin: 40px auto         
+    &-img
+      position: relative 
+      left: 0px
+      margin: 0 auto
+      &__one
+        margin-top: 0px
+      &__two
+        display: none
+
+@media (max-width: 768px)
+  .blog
+    background-image: none
+

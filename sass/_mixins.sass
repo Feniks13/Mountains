@@ -1,10 +1,16 @@
 @mixin btn ()
   font-size: 14px
+  line-height: 30px
+  letter-spacing: 1.4px
   font-weight: 700
   text-transform: uppercase
   color: $white
   padding: 21px 62px
   border: 1px solid $blue
-  border-radius: 4px
+  border-radius: 6px
   background-color: $blue
   box-shadow: 0 0 35px rgba(3,3,3,.06)
+  transition-duration: 500ms
+  &:hover
+    background-color: #1a99d9
+    cursor: pointer

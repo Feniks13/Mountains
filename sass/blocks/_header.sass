@@ -2,10 +2,12 @@
   background: url(../img/header-bg.jpg) top center no-repeat
   background-size: cover
   padding-bottom: 154px
-  height: 698px
   .navbar
     background: rgba(255,255,255,.5)
     padding: 22px 15px
+    position: fixed
+    width: 100%
+    z-index: 1000
     &-wrap
       display: flex
       justify-content: space-between
@@ -60,7 +62,8 @@
     height: 590px
     border: 3px solid $white
     border-bottom: none
-    margin-top: 18px
+    position: relative
+    bottom: -154px
     &-wrap
       width: 50%
       margin: 120px 20px      
@@ -109,6 +112,8 @@
     .inform-wrap
       &__title
         font-size: 44px
+      &__btn
+        padding: 20px 38px
 
 @media (max-width: 440px)
   .header
@@ -118,5 +123,4 @@
       &__title
         font-size: 35px
         line-height: 40px
-      &__btn
-        padding: 20px 38px
+        letter-spacing: 1.2px
